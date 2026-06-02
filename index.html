@@ -35,6 +35,11 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#96c11f">
 
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <!-- Core Stylesheet -->
   <link rel="stylesheet" href="style.css?v=1.0.3">
 
@@ -89,7 +94,7 @@
   <header id="main-header">
     <div class="container">
       <div class="logo-wrapper">
-        <img id="company-logo" src="LOGO.png" alt="شعار أحلى مكان للاستقدام">
+        <img id="company-logo" src="LOGO.png" alt="شعار أحلى مكان للاستقدام" width="55" height="55" decoding="async">
         <div class="logo-text">
           <span class="logo-title">أحلى مكان</span>
           <span class="logo-subtitle">للاستقدام والخدمات المنزلية</span>
@@ -149,7 +154,7 @@
               <!-- Video Placeholder with high performance thumbnail -->
               <div class="video-thumb-container" id="play-video-trigger" role="button" tabindex="0" aria-label="تشغيل فيديو تعريفي للاستقدام">
                 <!-- Lazy loaded youtube high-quality thumbnail placeholder -->
-                <img id="video-thumbnail" src="PHOTO/worker_2.jpeg" alt="تشغيل الفيديو التعريفي لأحلى مكان للاستقدام">
+                <img id="video-thumbnail" src="PHOTO/worker_2.jpeg" alt="تشغيل الفيديو التعريفي لأحلى مكان للاستقدام" width="560" height="315" fetchpriority="high" decoding="async">
                 <div class="video-play-btn" role="button">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg>
                 </div>
@@ -282,7 +287,7 @@
           <!-- Card 1 (Philippines) -->
           <article class="worker-card" data-nationality="philippines">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_1.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy">
+              <img src="PHOTO/worker_1.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇵🇭</span> الفلبين</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -296,7 +301,7 @@
           <!-- Card 2 (Indonesia) -->
           <article class="worker-card" data-nationality="indonesia">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_2.jpeg" alt="طلب استقدام عاملة منزلية من إندونيسيا" loading="lazy">
+              <img src="PHOTO/worker_2.jpeg" alt="طلب استقدام عاملة منزلية من إندونيسيا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇮🇩</span> إندونيسيا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -310,7 +315,7 @@
           <!-- Card 3 (Philippines) -->
           <article class="worker-card" data-nationality="philippines">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_3.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy">
+              <img src="PHOTO/worker_3.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇵🇭</span> الفلبين</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -324,7 +329,7 @@
           <!-- Card 4 (Sri Lanka) -->
           <article class="worker-card" data-nationality="srilanka">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_4.jpeg" alt="طلب استقدام عاملة منزلية من سريلانكا" loading="lazy">
+              <img src="PHOTO/worker_4.jpeg" alt="طلب استقدام عاملة منزلية من سريلانكا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇱🇰</span> سريلانكا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -338,7 +343,7 @@
           <!-- Card 5 (Ethiopia) -->
           <article class="worker-card" data-nationality="ethiopia">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_5.jpeg" alt="طلب استقدام عاملة منزلية من إثيوبيا" loading="lazy">
+              <img src="PHOTO/worker_5.jpeg" alt="طلب استقدام عاملة منزلية من إثيوبيا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇪🇹</span> إثيوبيا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -352,7 +357,7 @@
           <!-- Card 6 (India) -->
           <article class="worker-card" data-nationality="india">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_6.jpeg" alt="طلب استقدام عاملة منزلية من الهند" loading="lazy">
+              <img src="PHOTO/worker_6.jpeg" alt="طلب استقدام عاملة منزلية من الهند" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇮🇳</span> الهند</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -366,7 +371,7 @@
           <!-- Card 7 (Indonesia) -->
           <article class="worker-card" data-nationality="indonesia">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_7.jpeg" alt="طلب استقدام عاملة منزلية من إندونيسيا" loading="lazy">
+              <img src="PHOTO/worker_7.jpeg" alt="طلب استقدام عاملة منزلية من إندونيسيا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇮🇩</span> إندونيسيا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -380,7 +385,7 @@
           <!-- Card 8 (Philippines) -->
           <article class="worker-card" data-nationality="philippines">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_8.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy">
+              <img src="PHOTO/worker_8.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇵🇭</span> الفلبين</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -394,7 +399,7 @@
           <!-- Card 9 (Sri Lanka) -->
           <article class="worker-card" data-nationality="srilanka">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_9.jpeg" alt="طلب استقدام عاملة منزلية من سريلانكا" loading="lazy">
+              <img src="PHOTO/worker_9.jpeg" alt="طلب استقدام عاملة منزلية من سريلانكا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇱🇰</span> سريلانكا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -408,7 +413,7 @@
           <!-- Card 10 (Ethiopia) -->
           <article class="worker-card" data-nationality="ethiopia">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_10.jpeg" alt="طلب استقدام عاملة منزلية من إثيوبيا" loading="lazy">
+              <img src="PHOTO/worker_10.jpeg" alt="طلب استقدام عاملة منزلية من إثيوبيا" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇪🇹</span> إثيوبيا</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -422,7 +427,7 @@
           <!-- Card 11 (India) -->
           <article class="worker-card" data-nationality="india">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_11.jpeg" alt="طلب استقدام عاملة منزلية من الهند" loading="lazy">
+              <img src="PHOTO/worker_11.jpeg" alt="طلب استقدام عاملة منزلية من الهند" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇮🇳</span> الهند</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -436,7 +441,7 @@
           <!-- Card 12 (Philippines) -->
           <article class="worker-card" data-nationality="philippines">
             <div class="worker-img-container">
-              <img src="PHOTO/worker_12.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy">
+              <img src="PHOTO/worker_12.jpeg" alt="طلب استقدام عاملة منزلية من الفلبين" loading="lazy" decoding="async" width="300" height="300">
               <span class="worker-badge-nationality"><span class="flag-emoji">🇵🇭</span> الفلبين</span>
               <span class="worker-badge-status">متاحة الآن</span>
             </div>
@@ -500,7 +505,7 @@
 
   <!-- Floating WhatsApp widget -->
   <a id="floating-whatsapp-widget" href="https://wa.me/97455487821?text=مرحباً%20أحلى%20مكان%20أود%20الاستفسار%20عن%20الخدمات%20المنزلية" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل معنا فوراً عبر واتساب">
-    <img src="WhatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon-img">
+    <img src="WhatsApp_icon.png" alt="WhatsApp" class="whatsapp-icon-img" width="60" height="60" decoding="async">
   </a>
 
   <!-- Video Modal -->
