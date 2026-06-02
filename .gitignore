@@ -1,0 +1,6 @@
+# Ignore old reference website
+old/
+old_files/
+
+# Ignore local python validation/analysis scripts
+*.py
