@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   playVideoTrigger.addEventListener('click', () => {
     // Dynamic iframe creation to boost initial page speed score
     modalVideoContainer.innerHTML = `
-      <iframe src="https://www.youtube-nocookie.com/embed/1N-OxCKflF4?autoplay=1&mute=0&rel=0&showinfo=0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      <iframe src="https://drive.google.com/file/d/11hlCvBWr05uaJynWoHHg8k-oZa1WJnqd/preview" 
+              allow="autoplay" 
               allowfullscreen
               title="فيديو تعريفي أحلى مكان للاستقدام">
       </iframe>
