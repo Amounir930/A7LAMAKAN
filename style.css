@@ -388,7 +388,7 @@ header .container {
 /* Hero Section */
 .hero {
   position: relative;
-  padding: 120px 0 80px;
+  padding: 40px 0 80px;
   background-image: radial-gradient(circle at 10% 20%, rgba(150, 193, 31, 0.03) 0%, rgba(255, 255, 255, 0) 90%);
   overflow: hidden;
 }
