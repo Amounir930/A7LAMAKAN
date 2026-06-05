@@ -216,6 +216,15 @@ img {
   background-color: var(--primary);
   color: var(--white);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(150, 193, 31, 0.2);
+}
+
+.lang-toggle-btn {
+  padding: 8px 14px;
+  font-weight: 800;
+  gap: 6px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
 }
 
 .btn-white {
