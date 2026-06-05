@@ -395,22 +395,22 @@ header .container {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
 }
 
 .hero-title-main {
-  font-size: 56px;
+  font-size: 44px;
   font-weight: 900;
   color: var(--dark-green);
-  line-height: 1.2;
+  line-height: 1.25;
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
 .hero-subtitle {
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 10px;
