@@ -1195,39 +1195,41 @@ footer {
   }
   
   .mobile-nav-toggle {
-    display: block;
+    display: none !important; /* Hide hamburger menu completely on mobile as requested */
   }
   
-  /* Make header and buttons more compact on mobile and split into two rows */
+  /* Stack logo and buttons vertically, centering the logo */
   header .container {
-    display: grid;
-    grid-template-areas: 
-      "logo menu"
-      "cta cta";
-    grid-template-columns: 1fr auto;
-    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    padding: 12px 16px;
+    padding: 14px 16px;
+    gap: 12px;
   }
   
   .logo-wrapper {
-    grid-area: logo;
-    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
   }
   
   .logo-wrapper img {
-    height: 46px; /* Larger and clearer logo on mobile */
+    height: 50px; /* Larger logo icon */
     width: auto;
   }
   
   .logo-title {
-    font-size: 17px; /* Larger and clearer logo text */
+    font-size: 19px; /* Larger title text */
     font-weight: 800;
   }
   
   .logo-subtitle {
     display: block !important; /* Keep the subtitle visible */
-    font-size: 10px; /* Clear and readable description */
+    font-size: 11px; /* Larger and clearer description text */
     color: var(--primary-hover);
     font-weight: 700;
     line-height: 1.2;
@@ -1235,23 +1237,18 @@ footer {
     letter-spacing: 0px;
   }
   
-  .mobile-nav-toggle {
-    grid-area: menu;
-    display: block;
-    padding: 6px;
-  }
-  
   .nav-cta {
-    grid-area: cta;
     display: flex;
     width: 100%;
     gap: 12px;
     padding-top: 10px;
     border-top: 1px solid var(--gray-100); /* Separator line between rows */
+    justify-content: center;
   }
   
   .nav-cta .btn {
     flex: 1; /* Stretch buttons equally across the screen */
+    max-width: 200px;
     justify-content: center;
     padding: 8px 16px; /* Comfortable padding */
     font-size: 14px;
@@ -1266,13 +1263,13 @@ footer {
   
   @media (max-width: 480px) {
     .logo-wrapper img {
-      height: 40px;
+      height: 44px;
     }
     .logo-title {
-      font-size: 15px;
+      font-size: 16px;
     }
     .logo-subtitle {
-      font-size: 9px;
+      font-size: 9.5px;
     }
     .nav-cta .btn {
       padding: 6px 12px;
@@ -1287,10 +1284,10 @@ footer {
   
   @media (max-width: 340px) {
     .logo-wrapper img {
-      height: 34px;
+      height: 36px;
     }
     .logo-title {
-      font-size: 13px;
+      font-size: 14px;
     }
     .logo-subtitle {
       font-size: 8px;
