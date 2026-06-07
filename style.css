@@ -1229,9 +1229,9 @@ footer {
   
   .logo-subtitle {
     display: block !important; /* Keep the subtitle visible */
-    font-size: 11px; /* Larger and clearer description text */
-    color: var(--primary-hover);
-    font-weight: 700;
+    font-size: 12px; /* Slightly larger */
+    color: #4a6b0c; /* Darker green for high visibility */
+    font-weight: 800; /* Bolder text */
     line-height: 1.2;
     margin-top: 2px;
     letter-spacing: 0px;
@@ -1269,7 +1269,9 @@ footer {
       font-size: 16px;
     }
     .logo-subtitle {
-      font-size: 9.5px;
+      font-size: 10.5px; /* Slightly larger */
+      color: #4a6b0c;
+      font-weight: 800;
     }
     .nav-cta .btn {
       padding: 6px 12px;
@@ -1290,7 +1292,9 @@ footer {
       font-size: 14px;
     }
     .logo-subtitle {
-      font-size: 8px;
+      font-size: 9px; /* Slightly larger */
+      color: #4a6b0c;
+      font-weight: 800;
     }
     .nav-cta {
       gap: 8px;
