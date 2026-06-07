@@ -1198,100 +1198,114 @@ footer {
     display: block;
   }
   
-  /* Make header and buttons more compact on mobile */
+  /* Make header and buttons more compact on mobile and split into two rows */
   header .container {
-    height: 74px;
-    padding: 0 12px;
+    display: grid;
+    grid-template-areas: 
+      "logo menu"
+      "cta cta";
+    grid-template-columns: 1fr auto;
+    row-gap: 10px;
+    height: auto;
+    padding: 12px 16px;
   }
   
   .logo-wrapper {
-    gap: 6px;
+    grid-area: logo;
+    gap: 10px;
   }
   
   .logo-wrapper img {
-    height: 35px;
+    height: 46px; /* Larger and clearer logo on mobile */
     width: auto;
   }
   
   .logo-title {
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 17px; /* Larger and clearer logo text */
+    font-weight: 800;
   }
   
   .logo-subtitle {
-    display: block !important; /* Force subtitle to show on mobile as requested */
-    font-size: 8px;
+    display: block !important; /* Keep the subtitle visible */
+    font-size: 10px; /* Clear and readable description */
     color: var(--primary-hover);
     font-weight: 700;
-    line-height: 1.1;
-    margin-top: 1px;
-    letter-spacing: 0;
-  }
-  
-  .nav-cta {
-    gap: 6px;
-  }
-  
-  .nav-cta .btn {
-    padding: 6px 10px;
-    font-size: 12px;
-    height: 34px;
-  }
-  
-  .lang-toggle-btn {
-    padding: 6px 8px !important;
-    font-size: 12px !important;
+    line-height: 1.2;
+    margin-top: 2px;
     letter-spacing: 0px;
   }
   
+  .mobile-nav-toggle {
+    grid-area: menu;
+    display: block;
+    padding: 6px;
+  }
+  
+  .nav-cta {
+    grid-area: cta;
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--gray-100); /* Separator line between rows */
+  }
+  
+  .nav-cta .btn {
+    flex: 1; /* Stretch buttons equally across the screen */
+    justify-content: center;
+    padding: 8px 16px; /* Comfortable padding */
+    font-size: 14px;
+    height: 40px;
+  }
+  
+  .lang-toggle-btn {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    letter-spacing: 0.5px;
+  }
+  
   @media (max-width: 480px) {
-    header .container {
-      padding: 0 8px;
-    }
     .logo-wrapper img {
-      height: 32px;
+      height: 40px;
     }
     .logo-title {
-      font-size: 12px;
+      font-size: 15px;
     }
     .logo-subtitle {
-      font-size: 7px;
+      font-size: 9px;
     }
     .nav-cta .btn {
-      padding: 5px 8px;
-      font-size: 11px;
-      height: 30px;
+      padding: 6px 12px;
+      font-size: 13px;
+      height: 36px;
     }
     .lang-toggle-btn {
-      padding: 5px 6px !important;
-      font-size: 11px !important;
+      padding: 6px 12px !important;
+      font-size: 13px !important;
     }
   }
   
   @media (max-width: 340px) {
-    header .container {
-      padding: 0 4px;
-    }
     .logo-wrapper img {
-      height: 26px;
+      height: 34px;
     }
     .logo-title {
-      font-size: 10px;
+      font-size: 13px;
     }
     .logo-subtitle {
-      font-size: 6.5px;
+      font-size: 8px;
     }
     .nav-cta {
-      gap: 4px;
+      gap: 8px;
     }
     .nav-cta .btn {
-      padding: 4px 6px;
-      font-size: 10px;
-      height: 28px;
+      padding: 5px 10px;
+      font-size: 12px;
+      height: 32px;
     }
     .lang-toggle-btn {
-      padding: 4px 4px !important;
-      font-size: 10px !important;
+      padding: 5px 10px !important;
+      font-size: 12px !important;
     }
   }
   
@@ -1300,7 +1314,7 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 100%; /* Position it dynamically below the multi-row header */
     left: 0;
     right: 0;
     background-color: var(--white);
@@ -1309,6 +1323,7 @@ footer {
     border-bottom: 2px solid var(--primary);
     gap: 20px;
     animation: slideDown 0.3s ease;
+    z-index: 999;
   }
   
   @keyframes slideDown {
