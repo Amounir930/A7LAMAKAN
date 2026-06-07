@@ -1176,12 +1176,67 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links, #header-whatsapp-btn {
+  .nav-links {
     display: none;
   }
   
   .mobile-nav-toggle {
     display: block;
+  }
+  
+  /* Make header and buttons more compact on mobile */
+  header .container {
+    height: 70px;
+    padding: 0 16px;
+  }
+  
+  .logo-wrapper {
+    gap: 8px;
+  }
+  
+  .logo-wrapper img {
+    height: 38px;
+    width: auto;
+  }
+  
+  .logo-title {
+    font-size: 15px;
+  }
+  
+  .logo-subtitle {
+    display: none; /* Hide subtitle to save horizontal space on mobile */
+  }
+  
+  .nav-cta {
+    gap: 8px;
+  }
+  
+  .nav-cta .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    height: 36px;
+  }
+  
+  .lang-toggle-btn {
+    padding: 6px 10px;
+    letter-spacing: 0.5px;
+  }
+  
+  @media (max-width: 480px) {
+    .logo-text {
+      display: none; /* Show only logo icon on very narrow mobile screens */
+    }
+    
+    .nav-cta .btn {
+      padding: 5px 10px;
+      font-size: 12px;
+      height: 32px;
+    }
+    
+    .nav-cta .btn svg {
+      width: 14px;
+      height: 14px;
+    }
   }
   
   /* Mobile Menu active style */
