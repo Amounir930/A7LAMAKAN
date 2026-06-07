@@ -59,6 +59,10 @@ html {
   line-height: 1.6;
 }
 
+html[lang="en"] {
+  font-family: 'Outfit', 'Cairo', sans-serif;
+}
+
 body {
   overflow-x: hidden;
   font-size: 16px;
@@ -604,7 +608,7 @@ header .container {
 .stat-card:not(:last-child)::after {
   content: '';
   position: absolute;
-  left: 0;
+  inset-inline-end: 0;
   top: 15%;
   height: 70%;
   width: 1px;
@@ -657,7 +661,7 @@ header .container {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  inset-inline-start: 0;
   width: 4px;
   height: 0;
   background-color: var(--primary);
@@ -783,7 +787,7 @@ header .container {
 .worker-badge-nationality {
   position: absolute;
   top: 12px;
-  right: 12px;
+  inset-inline-end: 12px;
   background-color: var(--white);
   padding: 4px 10px;
   border-radius: var(--radius-full);
@@ -803,7 +807,7 @@ header .container {
 .worker-badge-status {
   position: absolute;
   top: 12px;
-  left: 12px;
+  inset-inline-start: 12px;
   background-color: var(--primary);
   color: var(--white);
   padding: 4px 10px;
@@ -1172,7 +1176,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .nav-links, .nav-cta .btn {
+  .nav-links, #header-whatsapp-btn {
     display: none;
   }
   
