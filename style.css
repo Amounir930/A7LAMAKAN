@@ -1041,7 +1041,7 @@ header .container {
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
-  left: 30px;
+  inset-inline-start: 30px;
   width: 60px;
   height: 60px;
   border-radius: var(--radius-full);
