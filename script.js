@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         const workerId = btn.getAttribute('data-worker-id');
         const country = btn.getAttribute('data-worker-country');
-        const phoneNumber = '97455487821';
+        const phoneNumber = '97470666105';
         
         const customMessage = `مرحباً أحلى مكان، أريد الاستفسار عن العاملة المنزلية من جنسية (${country}) ذات الرمز [${workerId}] المعروضة في موقعكم.`;
         const encodedMessage = encodeURIComponent(customMessage);
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('form-phone').value.trim();
       const nationality = document.getElementById('form-nationality').value;
       const message = document.getElementById('form-message').value.trim();
-      const phoneNumber = '97455487821';
+      const phoneNumber = '97470666105';
 
       const msgText = `*طلب استفسار جديد من الموقع الجغرافي*%0A` +
                       `*الاسم:* ${name}%0A` +
