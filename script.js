@@ -208,4 +208,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 9. Google Ads Conversion / Event Tracking
+  const trackConversion = (eventName, contactMethod) => {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, {
+        'event_category': 'Contact',
+        'event_label': contactMethod,
+        'value': 1.0
+      });
+      // Standard conversion action trigger for Google Ads (uncomment and replace when conversion labels are set up)
+      // gtag('event', 'conversion', {'send_to': 'AW-GOOGLE_AD_ID/CONVERSION_LABEL'});
+    }
+  };
+
+  // Add click listeners to WhatsApp elements
+  const whatsappElements = [
+    'floating-whatsapp-widget',
+    'hero-whatsapp-link',
+    'header-whatsapp-btn',
+    'contact-whatsapp-btn'
+  ];
+  whatsappElements.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', () => {
+        trackConversion('contact_whatsapp', id);
+      });
+    }
+  });
+
+  // Add click listeners to Phone elements
+  const phoneElements = [
+    'hero-phone-link',
+    'contact-phone-call'
+  ];
+  phoneElements.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', () => {
+        trackConversion('contact_phone', id);
+      });
+    }
+  });
+
 });
+
